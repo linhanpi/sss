@@ -674,8 +674,8 @@ if (document.body.clientWidth > 992) {
         zoom: 0.9,
         borderRadius: 5 + 'px',
         right: 55.6 + 'px',
-        nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",
-        hoverMsg: "春天啦~",
+        nekoImg: "https://cdn.luogu.com.cn/upload/image_hosting/dezo30l5.png",
+        hoverMsg: "回顶~",
         color: "var(--theme-color)",
         during: 500,
         blog_body: "body",
@@ -1074,7 +1074,7 @@ function changeMouseMode() {
       new Vue({
         data: function () {
           this.$notify({
-            title: "切换右键模式成功🍔",
+            title: "切换右键模式成功",
             message: "当前鼠标右键已恢复为系统默认！",
             position: 'top-left',
             offset: 50,
@@ -1092,7 +1092,7 @@ function changeMouseMode() {
       new Vue({
         data: function () {
           this.$notify({
-            title: "切换右键模式成功🍔",
+            title: "切换右键模式成功",
             message: "当前鼠标右键已更换为网站指定样式！",
             position: 'top-left',
             offset: 50,
@@ -1113,22 +1113,26 @@ function changeMouseMode() {
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("03/28/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
-    `Future is now 🍭🍭🍭`,
+    `欢迎来到Silly_Bear🍋瞎搭的blog`,
+    `北地小熊，乱世不败`,
     `
-        
-███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
-██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
-██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
-                                              
+
+    _____/\\\\\\\\\\\__________/\\\\\\_____/\\\\\\_____________________________________/\\\\\\\\\\\\\_______________________________________________        
+    ___/\\\/////////\\\_______\////\\\____\////\\\____________________________________\/\\\/////////\\\_____________________________________________       
+     __\//\\\______\///___/\\\____\/\\\_______\/\\\_______/\\\__/\\\___________________\/\\\_______\/\\\_____________________________________________      
+      ___\////\\\_________\///_____\/\\\_______\/\\\______\//\\\/\\\____________________\/\\\\\\\\\\\\\\______/\\\\\\\\___/\\\\\\\\\_____/\\/\\\\\\\__     
+       ______\////\\\_______/\\\____\/\\\_______\/\\\_______\//\\\\\_____________________\/\\\/////////\\\___/\\\/////\\\_\////////\\\___\/\\\/////\\\_    
+        _________\////\\\___\/\\\____\/\\\_______\/\\\________\//\\\______________________\/\\\_______\/\\\__/\\\\\\\\\\\____/\\\\\\\\\\__\/\\\___\///__   
+         __/\\\______\//\\\__\/\\\____\/\\\_______\/\\\_____/\\_/\\\_______________________\/\\\_______\/\\\_\//\\///////____/\\\/////\\\__\/\\\_________  
+          _\///\\\\\\\\\\\/___\/\\\__/\\\\\\\\\__/\\\\\\\\\_\//\\\\/_______/\\\\\\\\\\\\\\\_\/\\\\\\\\\\\\\/___\//\\\\\\\\\\_\//\\\\\\\\/\\_\/\\\_________ 
+           ___\///////////_____\///__\/////////__\/////////___\////________\///////////////__\/////////////______\//////////___\////////\//__\///__________
+   
 `,
     "小站已经苟活",
     dnum,
@@ -1172,7 +1176,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by Silly_Bear🍋 %c 你正在访问Silly_Bear🍋瞎搭的blog",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -1196,74 +1200,27 @@ console.warn = function () { };
 
 /* 夜间模式切换动画 start */
 function switchNightMode() {
-  document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>'),
-    setTimeout(function () {
+  document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>'),
+    setTimeout(function() {
       document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')),
-        setTimeout(function () {
+        setTimeout(function() {
           document.getElementsByClassName('Cuteen_DarkSky')[0].style.transition = 'opacity 3s';
           document.getElementsByClassName('Cuteen_DarkSky')[0].style.opacity = '0';
-          setTimeout(function () {
+          setTimeout(function() {
             document.getElementsByClassName('Cuteen_DarkSky')[0].remove();
           }, 1e3);
         }, 2e3)
     })
   const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
   if (nowMode === 'light') {
-    // 先设置太阳月亮透明度
-    document.getElementById("sun").style.opacity = "1";
-    document.getElementById("moon").style.opacity = "0";
-    setTimeout(function () {
-      document.getElementById("sun").style.opacity = "0";
-      document.getElementById("moon").style.opacity = "1";
-    }, 1000);
-
     activateDarkMode()
     saveToLocal.set('theme', 'dark', 2)
-    // GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
+    GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
     document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')
-    // 延时弹窗提醒
-    setTimeout(() => {
-      new Vue({
-        data: function () {
-          this.$notify({
-            title: "关灯啦🌙",
-            message: "当前已成功切换至夜间模式！",
-            position: 'top-left',
-            offset: 50,
-            showClose: true,
-            type: "success",
-            duration: 5000
-          });
-        }
-      })
-    }, 2000)
   } else {
-    // 先设置太阳月亮透明度
-    document.getElementById("sun").style.opacity = "0";
-    document.getElementById("moon").style.opacity = "1";
-    setTimeout(function () {
-      document.getElementById("sun").style.opacity = "1";
-      document.getElementById("moon").style.opacity = "0";
-    }, 1000);
-
     activateLightMode()
     saveToLocal.set('theme', 'light', 2)
     document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')
-    setTimeout(() => {
-      new Vue({
-        data: function () {
-          this.$notify({
-            title: "开灯啦🌞",
-            message: "当前已成功切换至白天模式！",
-            position: 'top-left',
-            offset: 50,
-            showClose: true,
-            type: "success",
-            duration: 5000
-          });
-        }
-      })
-    }, 2000)
   }
   // handle some cases
   typeof utterancesTheme === 'function' && utterancesTheme()
@@ -1282,8 +1239,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    var subTitle = title.endsWith("| Silly_Bear🍋") ? title.substring(0, title.length - 14) : title;
+    navigator.clipboard.writeText('Silly_Bear🍋的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍋🍋🍋');
     new Vue({
       data: function () {
         this.$notify({
@@ -1321,11 +1278,11 @@ var titleTime;
 document.addEventListener('visibilitychange', function () {
   if (document.hidden) {
     //离开当前页面时标签显示内容
-    document.title = '👀跑哪里去了~';
+    document.title = '🍋滚哪里去了~';
     clearTimeout(titleTime);
   } else {
     //返回当前页面时标签显示内容
-    document.title = '🐖抓到你啦～';
+    document.title = '🐖滚回来啦～';
     //两秒后变回正常标题
     titleTime = setTimeout(function () {
       document.title = OriginTitile;
@@ -2470,13 +2427,7 @@ if (m == 1 && dd == 1) {//元旦节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 3 && dd == 8) {//妇女节
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("各位女神们，妇女节快乐！👩");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
-l = ["非常抱歉，因为不可控原因，博客将于明天停止运营！", "好消息，日本没了！", "美国垮了，原因竟然是川普！", "微软垮了！", "你的电脑已经过载，建议立即关机！", "你知道吗？站长很喜欢你哦！", "一分钟有61秒哦", "你喜欢的人跟别人跑了！"]
+l = ["非常抱歉，因为不可控原因，本站将于明天停止运营！", "川普上台了！", "微软垮了！", "你的电脑已经过载，建议立即关机！", "666", "一分钟有61秒哦"]
 if (m == 4 && dd == 1) {//愚人节，随机谎话
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire(l[Math.floor(Math.random() * l.length)]);
@@ -2495,12 +2446,12 @@ if (m == 5 && dd == 4) {//青年节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 5 && dd == 20) {//520
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧！💑");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
+// if (m == 5 && dd == 20) {//520
+//   if (sessionStorage.getItem("isPopupWindow") != "1") {
+//     Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧！💑");
+//     sessionStorage.setItem("isPopupWindow", "1");
+//   }
+// }
 if (m == 7 && dd == 1) {//建党节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("祝中国共产党" + (y - 1921).toString() + "岁生日快乐！");
@@ -2513,24 +2464,24 @@ if (m == 9 && dd == 10) {//教师节
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 12 && dd == 25) {//圣诞节
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("圣诞节快乐！🎄");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
+// if (m == 12 && dd == 25) {//圣诞节
+//   if (sessionStorage.getItem("isPopupWindow") != "1") {
+//     Swal.fire("圣诞节快乐！🎄");
+//     sessionStorage.setItem("isPopupWindow", "1");
+//   }
+// }
 if (m == 8 && dd == 11) {//站长生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("祝站长" + (y - 1998).toString() + "岁生日快乐！🥝");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 6 && dd == 30) {//小猫咪生日
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
-    sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
+// if (m == 6 && dd == 30) {//小猫咪生日
+//   if (sessionStorage.getItem("isPopupWindow") != "1") {
+//     Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
+//     sessionStorage.setItem("isPopupWindow", "1");
+//   }
+// }
 
 //传统节日部分
 
@@ -2785,11 +2736,11 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
+  var start = new Date("03/28/2023 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("08/09/2022 00:00:00");
+  var grt = new Date("03/28/2023 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -2804,8 +2755,8 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' src='https://cdn.luogu.com.cn/upload/image_hosting/dezo30l5.png' title='hahaha~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='https://cdn.luogu.com.cn/upload/image_hosting/dezo30l5.png' title='hhh~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
@@ -2847,11 +2798,11 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
     if (now > 1000 + lastTime) {
       var fps = Math.round((frame * 1000) / (now - lastTime));
       if (fps <= 5) {
-        var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`
+        var kd = `<span style="color:#bd0000">卡成ppt🤣</span>`
       } else if (fps <= 15) {
-        var kd = `<span style="color:red">电竞级帧率😖</span>`
+        var kd = `<span style="color:red">电竞级帧率🤣</span>`
       } else if (fps <= 25) {
-        var kd = `<span style="color:orange">有点难受😨</span>`
+        var kd = `<span style="color:orange">有点难受🤣</span>`
       } else if (fps < 35) {
         var kd = `<span style="color:#9338e6">不太流畅🙄</span>`
       } else if (fps <= 45) {
@@ -3174,8 +3125,8 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
+    --default-bg: url(https://cdn.luogu.com.cn/upload/image_hosting/uajm4vqs.png);
+    --darkmode-bg:url(https://cdn.luogu.com.cn/upload/image_hosting/3k0d79io.png);
     --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
     --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
   }`;

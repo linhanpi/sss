@@ -4,7 +4,7 @@
   <url>
     <loc>https://linhanpi.github.io/tags/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
   <url>
     <loc>https://linhanpi.github.io/social/link/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,7 @@
   <url>
     <loc>https://linhanpi.github.io/social/fcircle/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +31,7 @@
   <url>
     <loc>https://linhanpi.github.io/site/time/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -40,7 +40,7 @@
   <url>
     <loc>https://linhanpi.github.io/site/census/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +49,7 @@
   <url>
     <loc>https://linhanpi.github.io/personal/love/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +58,7 @@
   <url>
     <loc>https://linhanpi.github.io/personal/bb/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,7 +67,7 @@
   <url>
     <loc>https://linhanpi.github.io/personal/about/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,7 +76,7 @@
   <url>
     <loc>https://linhanpi.github.io/life/music/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +85,7 @@
   <url>
     <loc>https://linhanpi.github.io/life/movies/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,7 +94,7 @@
   <url>
     <loc>https://linhanpi.github.io/life/games/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -103,7 +103,7 @@
   <url>
     <loc>https://linhanpi.github.io/categories/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -112,7 +112,7 @@
   <url>
     <loc>https://linhanpi.github.io/box/nav/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,7 +121,7 @@
   <url>
     <loc>https://linhanpi.github.io/box/gallery/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -130,7 +130,16 @@
   <url>
     <loc>https://linhanpi.github.io/box/animation/index.html</loc>
     
-    <lastmod>2023-03-31</lastmod>
+    <lastmod>2023-03-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://linhanpi.github.io/posts/wangluoliu.html</loc>
+    
+    <lastmod>2022-10-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -162,6 +171,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://linhanpi.github.io/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
+    <lastmod>2023-03-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://linhanpi.github.io/tags/Markdown/</loc>
